@@ -1,0 +1,667 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+
+html{
+    background-color: #000;
+}
+a {
+    text-decoration: none;
+
+}
+
+
+@font-face {
+    font-family: PTSans-Regular; 
+    src: url(fonts/PTSans-Regular.ttf); 
+   }
+@font-face {
+    font-family: PTSans-Bold; 
+    src: url(fonts/PTSans-Bold.ttf); 
+   }
+@font-face {
+    font-family: PostNoBillsJaffna-Bold; 
+    src: url(fonts/PostNoBillsJaffna-Bold.ttf); 
+   }
+@font-face {
+    font-family: PlayfairDisplay-Bold; 
+    src: url(fonts/PlayfairDisplay-Bold.ttf); 
+   }
+@font-face {
+    font-family: PlayfairDisplay-Regular; 
+    src: url(fonts/PlayfairDisplay-Regular.ttf); 
+   }
+
+
+   .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.item:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.item {
+    width: 260px;
+    height: 405px;
+    margin: 0 10px 40px 10px;
+}
+.itemblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itemblock {
+    width: 260px;
+    height: 325px;
+    background-color: rgb(25, 27, 28);
+}
+.itemtext1 {
+    color: #FFF;
+    font-family: PlayfairDisplay-Regular; 
+    font-size: 18px;
+    line-height: 24px;
+}
+.itemtext2 {
+    color: #FFF;
+    font-family: PlayfairDisplay-Bold;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.header {
+    width: 100%;
+    height: 44px;
+}
+.header {
+    display: flex;
+    justify-content: center;
+}
+.headerblock {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 20px 0 20px;
+}
+.headerblock {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.headerblock1 {
+    display: flex;
+    align-items: center;
+}
+.headerblock2 {
+    display: flex;
+    align-items: center;
+}
+.headerinfo {
+    margin-right: 15px;
+    color: rgb(150, 150, 150);
+    font-family: PTSans-Regular; 
+    font-size: 12px;
+    line-height: 16px;
+}
+.headerinfoI {
+    margin-right: 15px;
+    color: rgb(150, 150, 150);
+    font-family: PTSans-Regular; 
+    font-size: 12px;
+    line-height: 16px;
+}
+.headerinfo svg {
+    width: 16px;
+    height: 16px;
+}
+.headerlogin {
+    margin-left: 2px;
+    color: rgb(150, 150, 150);
+    font-family: PTSans-Regular; 
+    font-size: 12px;
+    line-height: 16px;
+}
+.headerlogin svg {
+    width: 14px;
+    height: 14px;
+}
+.headerloginsvg {
+    margin-right: 8px;
+}
+.headerlink {
+    color: rgb(150, 150, 150);
+}
+.headerlink:hover {
+    color: #FFF;
+}
+
+
+.topmenu {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(15, 15, 15);
+}
+.topmenu {
+    display: flex;
+    justify-content: center;
+}
+.topmenublock {
+    width: 100%;
+    max-width: 1110px;
+}
+.topmenublock {
+    display: flex;
+    justify-content: space-between;
+}
+.topmenublock1 {
+    display: flex;
+    align-items: center;
+}
+.topmenublock1 {
+    color: #FFF;
+    font-family: PostNoBillsJaffna-Bold; 
+    font-size: 36px;
+    line-height: 54px;
+}
+.topmenublock2 {
+    display: flex;
+    align-items: center;
+}
+.topmenublock2svg {
+    margin-left: 40px;
+    width: 22px;
+    height: 22px;
+}
+.topmenulink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topmenulink {
+    margin-left: 10px;
+    height: 80px;
+    min-width: 120px;
+    color: rgb(150, 150, 150);
+    font-family: PTSans-Regular;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.topmenulink a{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.topmenulink:hover {
+    background-color: rgb(31, 31, 31);
+    color: #FFF;
+}
+
+
+.main {
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 810px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main svg{
+    width: 320px;
+    height: 320px;
+}
+.main a{
+    margin-top: 80px;
+    width: 90%;
+    max-width: 730px;
+    text-align: center;
+    color: #FFF;
+    font-family: PTSans-Regular; 
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+
+.cards1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card1 {
+    width: 100%;
+    max-width: 1020px;
+    color: #FFF;
+    font-family: PlayfairDisplay-Bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+.card1 img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.card1head {
+    margin-top: 50px;
+}
+.card1items {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+.card1items {
+    width: 100%;
+    max-width: 900px
+}
+.card2 img {
+    width: 100%;
+    max-width: 880px;
+}
+.cards2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card3 img {
+    width: 100%;
+    max-width: 880px;
+}
+.card4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card4 {
+    width: 94%;
+    max-width: 1020px;
+    height: 600px;
+}
+.card4text1 {
+    color: #FFF;
+    font-family: PlayfairDisplay-Regular; 
+    font-size: 36px;
+    line-height: 48px;
+}
+.card4 img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.card4text2 {
+    width: 100%;
+    max-width: 472px;
+    text-align: center;
+    color: #FFF;
+    font-family: PTSans-Regular; 
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 61px;
+}
+.card4link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card4link {
+    outline:1px solid #FFF;
+    outline-offset:-1px;
+    width: 311px;
+    height: 47px;
+    min-width: 120px;
+    color: rgb(255, 255, 255);
+    font-family: PTSans-Regular;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+}
+.card4link:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+.itemsheadline {
+    display: flex;
+    justify-content: center;
+}
+.itemsheadlineblock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.itemsheadlineblock {
+    width: 100%;
+    max-width: 500px;
+    height: 290px;
+    text-transform: uppercase;
+}
+.itemsheadlinetext {
+    color: #FFF;
+    font-family: PlayfairDisplay-Bold; 
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    margin: 120px 3% 40px 3%;
+}
+
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itemsblock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.itemsblock {
+    width: 100%;
+    max-width: 1130px;
+}
+
+
+.brends {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.brends {
+    width: 100%;
+    margin-top: 110px;
+    background-color: rgb(15, 15, 15);
+    color: #FFF;
+    font-family: PlayfairDisplay-Bold; 
+    font-size: 36px;
+    line-height: 48px;
+}
+.brendstext {
+    margin-top: 60px;
+}
+.brendsimg {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.brendblock {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.brendblock {
+    width: 100%;
+    max-width: 1110px;
+    margin-bottom: 74px;
+}
+.brendblock img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    background-image: url(img/footer.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.footerblock {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footerblock {
+    margin: 80px 0 50px 0;
+    width: 100%;
+    max-width: 1110px;
+}
+.footerpodblock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.footerpodblock {
+    width: 350px;
+}
+.footerpodblockheadline {
+    color: #FFF;
+    font-family: PlayfairDisplay-Regular; 
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.footertext{
+    color: #FFF;
+    font-family: PTSans-Regular;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 37px;
+}
+.footersquares {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square {
+    background-color: rgb(15, 15, 15);
+    padding: 0 20px 0 20px;
+    height: 41px;
+    color: rgb(208, 208, 208);
+    font-size: 14px;
+    line-height: 150%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.square:hover {
+    color: #FFF;
+    background-color: rgb(31, 31, 31);
+}
+.form {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgb(255, 255, 255);
+    font-family: PTSans-Regular;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 150%;
+    width: 195px;
+    height: 41px;
+    margin-right: -4px;
+}
+.form::placeholder {
+    color:rgb(192, 192, 192);
+}
+.submit {
+    color:rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    background-color: rgb(15, 15, 15) ;
+    width: 140px;
+    height: 41px;
+    font-family: PTSans-Regular;
+}
+
+
+.credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.credits {
+    height: 50px;
+}
+.creditsblock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.creditsblock {
+    width: 100%;
+    max-width: 1110px;
+    font-size: 12px;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(208, 208, 208);
+
+}
+.credits1 {
+    font-family: PTSans-Regular;
+}
+.credits2 {
+    font-family: PTSans-Bold; 
+}
+
+
+@media(max-width:450px){
+    .headerblock1 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .headerinfoI {
+        display: none;
+    }
+}
+
+@media(max-width:546px){
+    .topmenu {
+        height: 160px;
+    }
+}
+
+@media(max-width:550px){
+    .topmenublock1 {
+        display: flex;
+        align-items: center;
+    }
+    .topmenublock1 {
+        color: #FFF;
+        font-family: PostNoBillsJaffna-Bold; 
+        font-size: 36px;
+        line-height: 54px;
+    }
+    .topmenublock2 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:580px){
+    .header {
+        height: 88px;
+    }
+    .headerblock {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: space-around;
+    }
+}
+
+@media(max-width:650px){
+    .topmenublock1 {
+        display: none;
+    }
+    .topmenublock2svg {
+        margin: 0 20px 0 20px;
+    }
+}
+
+@media(max-width:1020px){
+    .card1items {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+@media(max-width:1120px){
+    .footerblock {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .creditsblock {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .credits {
+        height: 100px;
+    }
+}
+
+@media(max-width:1919px){
+    .cards1 {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .cards2 {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+.runtext {
+	width:100%;
+white-space:nowrap;
+overflow:hidden;
+}
+.runtext span{
+color:	#ffffff;
+font-size:25px;
+display:inline-block;
+padding-left:100%;
+-webkit-animation: marquee 10s infinite linear;
+animation: marquee 10s infinite linear;
+}
+@-webkit-keyframes marquee {
+0%{-webkit-transform: translate(-100%, 0);}
+100%{-webkit-transform: translate(0, 0);}
+}
+@keyframes marquee{
+0%{transform: translate(-100%, 0);}
+100%{transform: translate(0, 0)}
+}
+
+
